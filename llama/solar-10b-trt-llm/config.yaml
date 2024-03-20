@@ -25,4 +25,5 @@ resources:
 runtime:
   predict_concurrency: 256
 secrets: {}
-system_packages: []
+system_packages:
+- python3.10-venv
