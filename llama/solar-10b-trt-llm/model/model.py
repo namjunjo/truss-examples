@@ -77,6 +77,7 @@ class Model:
             prompt = self.tokenizer.apply_chat_template(
                 model_input.get("messages"),
                 tokenize=False,
+                add_generation_prompt=True,
             )
         else:
             prompt = model_input.get("prompt")
